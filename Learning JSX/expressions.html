@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Starting with JSX</title>
+        <script crossorigin
+            src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+
+            function sum(){
+                let a = 10+5;
+                return a;
+            }
+
+            //JSX Expression
+            const header = <h2>JSX Expression</h2>;
+
+            
+            function App(){
+                var name = "Satyam";
+                var age = 10;
+                let demo = null; 
+                let undef;
+                const bool = true;
+
+                return(
+                    <>
+                    <h1>Javascript inside JSX</h1>
+                    {header}
+                    <p>String {name}!</p>
+                    <p>Number: {age}.</p>
+                    <p>Null Value: {demo}</p>
+                    <p>Undefined Value: {undef}</p>
+                    <p>Boolean Value: {bool}</p>
+                    <p>Calling a function: {sum()}</p>
+                    </>
+                )
+            }
+            ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+
+
+
+        </script>
+    </body>
+</html>

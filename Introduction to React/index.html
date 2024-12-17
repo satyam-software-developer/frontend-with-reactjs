@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Starting with React App</title>
+        <script crossorigin
+            src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+     
+  
+// Created function component in React
+
+// function Name(){
+//     return(<>
+//     <p>JSX is Javascript XML</p>
+//     </>
+//     )
+// }
+
+
+//   const App = ()=> (
+
+//               <>
+//              <h1 className="head">Hello JSX</h1>
+//              <p>This is craeted using JSX</p>
+//              </>
+    
+//   )
+
+  
+
+
+// ReactDOM.createRoot(document.getElementById("root")).render(<><App /><Name /></>);
+
+function Name() {
+                return (
+                    <>
+                        <p>JSX is Javascript XML</p>
+                    </>
+                );
+            }
+
+            // function MainApp() {
+            //     return (
+            //         <>
+            //             <App />
+            //             <Name />
+            //         </>
+            //     );
+            // }
+
+            const App = () => (
+                <>
+                    <Name />
+                    <h1 className="head">Hello JSX</h1>
+                    <p>This is created using JSX</p>
+                </>
+            );
+
+            ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+           
+        </script>
+    </body>
+</html>
